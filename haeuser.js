@@ -14,10 +14,12 @@
      parken        nur wenn abweichend vom Standard, in DE/EN
      checkin       nur wenn abweichend vom Standard, in DE/EN
      hinweis       "Gut zu wissen" - freier Text in DE/EN
+     erreichbar    nur wenn abweichend vom Standard, in DE/EN
 
    STANDARD (wenn "parken" bzw. "checkin" fehlt):
-     Parken   -> "Kostenfreier Stellplatz direkt am Haus"
-     Check-in -> "16:00 Uhr"
+     Parken       -> "Kostenfreier Stellplatz direkt am Haus"
+     Check-in     -> "16:00 Uhr"
+     Erreichbarkeit -> "Täglich von 07:30 bis 19:00 Uhr"
 
    NIEMALS HIER EINTRAGEN:
      - Tuercode        - Schluesselversteck        - Alarmcode
