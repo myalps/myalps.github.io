@@ -3,25 +3,55 @@
 <style>
  @page{size:A4;margin:12mm}
  body{font-family:Arial,Helvetica,sans-serif;color:#123a31;margin:0}
- h1{font-size:18pt;margin:0 0 4mm}
- p.int{font-size:9pt;color:#5e6c65;margin:0 0 6mm}
- .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6mm}
- .card{border:1px solid #e5e0d3;border-radius:4mm;padding:4mm;text-align:center;break-inside:avoid}
- .card img{width:100%;max-width:48mm;height:auto;display:block;margin:0 auto 2mm}
- .nm{font-size:11pt;font-weight:bold;margin-bottom:1mm}
- .u{font-size:6.5pt;color:#5e6c65;word-break:break-all}
+ h1{font-size:18pt;margin:0 0 3mm}
+ p.int{font-size:9pt;color:#5e6c65;margin:0 0 6mm;line-height:1.5}
+ .haus{border:1px solid #e5e0d3;border-radius:4mm;padding:4mm;margin-bottom:5mm;break-inside:avoid}
+ .hn{font-size:12pt;font-weight:bold;margin-bottom:3mm}
+ .paar{display:flex;gap:6mm}
+ .code{text-align:center;flex:1}
+ .code img{width:100%;max-width:42mm;height:auto;display:block;margin:0 auto 1.5mm}
+ .ct{font-size:9pt;font-weight:bold}
+ .cs{font-size:7pt;color:#5e6c65;word-break:break-all;line-height:1.35}
 </style></head><body>
-<h1>MYALPS · Check-in QR-Codes</h1>
-<p class="int">Zum Ausdrucken: Strg+P. Für großformatigen Druck (Aufsteller, Schilder) bitte die SVG-Datei des jeweiligen Hauses an die Druckerei geben – SVG bleibt in jeder Größe scharf.</p>
-<div class="grid">
-  <div class="card"><img src="oetztal.png" alt="QR MYALPS Ötztal"><div class="nm">MYALPS Ötztal</div><div class="u">https://gregorscheiber-afk.github.io/myalps-checkin/oetztal/</div></div>
-  <div class="card"><img src="tirol.png" alt="QR MYALPS Tirol"><div class="nm">MYALPS Tirol</div><div class="u">https://gregorscheiber-afk.github.io/myalps-checkin/tirol/</div></div>
-  <div class="card"><img src="historical.png" alt="QR MYALPS Historical"><div class="nm">MYALPS Historical</div><div class="u">https://gregorscheiber-afk.github.io/myalps-checkin/historical/</div></div>
-  <div class="card"><img src="muehlhof.png" alt="QR MYALPS Mühlhof"><div class="nm">MYALPS Mühlhof</div><div class="u">https://gregorscheiber-afk.github.io/myalps-checkin/muehlhof/</div></div>
-  <div class="card"><img src="pure.png" alt="QR MYALPS Pure"><div class="nm">MYALPS Pure</div><div class="u">https://gregorscheiber-afk.github.io/myalps-checkin/pure/</div></div>
-  <div class="card"><img src="cecilia.png" alt="QR MYALPS Chalet Cecilia"><div class="nm">MYALPS Chalet Cecilia</div><div class="u">https://gregorscheiber-afk.github.io/myalps-checkin/cecilia/</div></div>
-  <div class="card"><img src="white-pearl.png" alt="QR MYALPS White Pearl"><div class="nm">MYALPS White Pearl</div><div class="u">https://gregorscheiber-afk.github.io/myalps-checkin/white-pearl/</div></div>
-  <div class="card"><img src="pirchhof.png" alt="QR MYALPS Chalet Pirchhof"><div class="nm">MYALPS Chalet Pirchhof</div><div class="u">https://gregorscheiber-afk.github.io/myalps-checkin/pirchhof/</div></div>
-  <div class="card"><img src="jordans-lodge.png" alt="QR MYALPS Jordans Lodge"><div class="nm">MYALPS Jordans Lodge</div><div class="u">https://gregorscheiber-afk.github.io/myalps-checkin/jordans-lodge/</div></div>
-  <div class="card"><img src="himmelreich.png" alt="QR MYALPS Himmelreich"><div class="nm">MYALPS Himmelreich</div><div class="u">https://gregorscheiber-afk.github.io/myalps-checkin/himmelreich/</div></div>
-</div></body></html>
+<h1>MYALPS · QR-Codes</h1>
+<p class="int">Links der <b>Check-in-Code</b> (führt zur Willkommensseite – braucht Internet).
+Rechts der <b>WLAN-Code</b> (verbindet das Handy direkt mit dem Gäste-WLAN – funktioniert ohne Internet).<br>
+Am Haus bitte <b>beide nebeneinander</b> aushängen: erst WLAN scannen, dann Check-in.<br>
+Für großformatigen Druck die SVG-Datei an die Druckerei geben – die bleibt in jeder Größe scharf.</p>
+<div class="haus"><div class="hn">MYALPS Ötztal</div><div class="paar">
+  <div class="code"><img src="oetztal.png" alt="Check-in MYALPS Ötztal"><div class="ct">Check-in</div><div class="cs">https://gregorscheiber-afk.github.io/myalps-checkin/oetztal/</div></div>
+  <div class="code"><img src="wlan-oetztal.png" alt="WLAN MYALPS Ötztal"><div class="ct">WLAN verbinden</div><div class="cs">Netz: MYALPS</div></div>
+</div></div>
+<div class="haus"><div class="hn">MYALPS Tirol</div><div class="paar">
+  <div class="code"><img src="tirol.png" alt="Check-in MYALPS Tirol"><div class="ct">Check-in</div><div class="cs">https://gregorscheiber-afk.github.io/myalps-checkin/tirol/</div></div>
+  <div class="code"><img src="wlan-tirol.png" alt="WLAN MYALPS Tirol"><div class="ct">WLAN verbinden</div><div class="cs">Netz: MYALPS</div></div>
+</div></div>
+<div class="haus"><div class="hn">MYALPS Historical</div><div class="paar">
+  <div class="code"><img src="historical.png" alt="Check-in MYALPS Historical"><div class="ct">Check-in</div><div class="cs">https://gregorscheiber-afk.github.io/myalps-checkin/historical/</div></div>
+  <div class="code"><img src="wlan-historical.png" alt="WLAN MYALPS Historical"><div class="ct">WLAN verbinden</div><div class="cs">Netz: MYALPS Historical</div></div>
+</div></div>
+<div class="haus"><div class="hn">MYALPS Mühlhof</div><div class="paar">
+  <div class="code"><img src="muehlhof.png" alt="Check-in MYALPS Mühlhof"><div class="ct">Check-in</div><div class="cs">https://gregorscheiber-afk.github.io/myalps-checkin/muehlhof/</div></div>
+  <div class="code"><img src="wlan-muehlhof.png" alt="WLAN MYALPS Mühlhof"><div class="ct">WLAN verbinden</div><div class="cs">Netz: Mühlhof</div></div>
+</div></div>
+<div class="haus"><div class="hn">MYALPS Pure</div><div class="paar">
+  <div class="code"><img src="pure.png" alt="Check-in MYALPS Pure"><div class="ct">Check-in</div><div class="cs">https://gregorscheiber-afk.github.io/myalps-checkin/pure/</div></div>
+  <div class="code"><img src="wlan-pure.png" alt="WLAN MYALPS Pure"><div class="ct">WLAN verbinden</div><div class="cs">Netz: MYALPS Pure</div></div>
+</div></div>
+<div class="haus"><div class="hn">Chalet Cecilia</div><div class="paar">
+  <div class="code"><img src="cecilia.png" alt="Check-in Chalet Cecilia"><div class="ct">Check-in</div><div class="cs">https://gregorscheiber-afk.github.io/myalps-checkin/cecilia/</div></div>
+  <div class="code"><img src="wlan-cecilia.png" alt="WLAN Chalet Cecilia"><div class="ct">WLAN verbinden</div><div class="cs">Netz: TheChaletGuestNetwork</div></div>
+</div></div>
+<div class="haus"><div class="hn">White Pearl</div><div class="paar">
+  <div class="code"><img src="white-pearl.png" alt="Check-in White Pearl"><div class="ct">Check-in</div><div class="cs">https://gregorscheiber-afk.github.io/myalps-checkin/white-pearl/</div></div>
+  <div class="code"><img src="wlan-white-pearl.png" alt="WLAN White Pearl"><div class="ct">WLAN verbinden</div><div class="cs">Netz: Chalet White Pearl</div></div>
+</div></div>
+<div class="haus"><div class="hn">Chalet Pirchhof</div><div class="paar">
+  <div class="code"><img src="pirchhof.png" alt="Check-in Chalet Pirchhof"><div class="ct">Check-in</div><div class="cs">https://gregorscheiber-afk.github.io/myalps-checkin/pirchhof/</div></div>
+  <div class="code"><img src="wlan-pirchhof.png" alt="WLAN Chalet Pirchhof"><div class="ct">WLAN verbinden</div><div class="cs">Netz: Pirchhof</div></div>
+</div></div>
+<div class="haus"><div class="hn">Jordans Lodge</div><div class="paar">
+  <div class="code"><img src="jordans-lodge.png" alt="Check-in Jordans Lodge"><div class="ct">Check-in</div><div class="cs">https://gregorscheiber-afk.github.io/myalps-checkin/jordans-lodge/</div></div>
+  <div class="code"><img src="wlan-jordans-lodge.png" alt="WLAN Jordans Lodge"><div class="ct">WLAN verbinden</div><div class="cs">Netz: jordansLodge126</div></div>
+</div></div>
+</body></html>
