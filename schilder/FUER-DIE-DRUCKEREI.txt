@@ -18,38 +18,47 @@ DATEIEN
   1000 dpi). Falls das Logo als Vektor (EPS/AI/SVG) vorliegt,
   darf es gerne 1:1 ersetzt werden - Position und Groesse
   bitte unveraendert lassen.
-  Schriften: Helvetica (PDF-Standardschrift).
-  Falls die Schrift ersetzt werden soll, bitte vorher Ruecksprache -
-  die QR-Codes duerfen dabei nicht angetastet werden.
+
+  Schriften: Helvetica und Courier (PDF-Standardschriften).
+  Falls eine Schrift ersetzt werden soll, bitte vorher
+  Ruecksprache. Der QR-Code darf dabei nicht angetastet werden.
 
 FARBEN
   Hintergrund   #0F1213   (fast schwarz)
+  Textfeld      #1B2021   (linker Kasten, minimal heller)
   Text          #FFFFFF
   Akzent        #C99A00   (Gold, wie im Logo)
-  QR-Flaechen   #FFFFFF mit QR in #0F1213
+  QR-Flaeche    #FFFFFF mit QR in #0F1213
 
   Die Dateien liegen in RGB vor. Fuer Offsetdruck bitte nach
-  CMYK wandeln; der Akzentton darf leicht abweichen, der
-  Kontrast der QR-Codes muss aber erhalten bleiben.
+  CMYK wandeln; der Goldton darf leicht abweichen, der
+  Kontrast des QR-Codes muss aber erhalten bleiben.
 
-WICHTIG - QR-CODES
+AUFBAU JEDES SCHILDS
+  oben       MYALPS-Logo und Hausname
+  Mitte      links  = WLAN-Zugang als Text (Kasten "WIFI")
+             rechts = QR-Code zur Check-in-Seite ("INFORMATION")
+
+  Bei MYALPS Himmelreich gibt es keinen WLAN-Kasten, dort steht
+  nur der QR-Code mittig.
+
+WICHTIG - QR-CODE
   * Nicht verzerren, nicht beschneiden, nicht drehen.
-  * Der weisse Rand um jeden Code gehoert dazu und muss bleiben,
-    sonst lassen sich die Codes nicht mehr scannen.
-  * Kein Verlauf, kein Muster, keine Folie ueber den Codes.
+  * Der weisse Rand um den Code gehoert dazu und muss bleiben,
+    sonst laesst sich der Code nicht mehr scannen.
+  * Kein Verlauf, kein Muster, keine Folie ueber dem Code.
   * Bei glaenzendem Material bitte matt oder seidenmatt im
-    Bereich der Codes - Spiegelungen verhindern das Scannen.
-  * Die beiden Codes sind unterschiedlich und duerfen nicht
-    vertauscht werden: links WIFI, rechts INFORMATION.
+    Bereich des Codes - Spiegelungen verhindern das Scannen.
 
-INHALT DER CODES
-  linker Code (WIFI)         verbindet das Handy mit dem Gaeste-WLAN
-  rechter Code (INFORMATION) fuehrt auf die Check-in-Seite des Hauses
-
-  Bei MYALPS Himmelreich gibt es nur einen (groesseren) Code,
-  weil dort noch kein WLAN hinterlegt ist.
+WICHTIG - WLAN-ZUGANGSDATEN
+  Netzname und Passwort stehen bewusst in einer Schreib-
+  maschinenschrift (Courier), damit sich l und 1 sowie O und 0
+  unterscheiden lassen. Bitte NICHT durch eine andere Schrift
+  ersetzen und die Gross-/Kleinschreibung exakt so uebernehmen -
+  Passwoerter sind zeichengenau.
 
 KONTROLLE VOR DEM DRUCK
-  Bitte beide Codes vom Ausdruck testweise mit einem Handy
-  scannen. Der linke Code muss eine WLAN-Verbindung anbieten,
-  der rechte eine Internetseite oeffnen.
+  Bitte den QR-Code vom Probedruck mit einem Handy scannen.
+  Es muss sich eine Internetseite oeffnen. Ausserdem die
+  WLAN-Zugangsdaten Zeichen fuer Zeichen gegen die Vorlage
+  vergleichen.
