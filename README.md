@@ -2,9 +2,9 @@
 
 Statische Willkommens-/Check-in-Seiten für die Apartmenthäuser.
 Gäste scannen den QR-Code am Haus und landen auf der Seite ihres Hauses.
-Dort steht: "Ihre Zugangsdaten stehen in Ihrer E-Mail" plus ein paar
-unkritische Infos (Adresse, Parken, Check-in-Zeit, WLAN-Name) und ein
-Anruf-Button mit der allgemeinen MYALPS-Nummer.
+Dort steht: "Deine Zugangsdaten stehen in deiner E-Mail" plus ein paar
+Infos (Adresse, Parken, Check-in-Zeit, WLAN) und ein Anruf-Button mit der
+allgemeinen MYALPS-Nummer. Gäste werden geduzt (DE und PL).
 
 ---
 
@@ -17,8 +17,9 @@ Dort steht für jedes der 9 Häuser ein kleiner Block:
 ```
   /* ---------- MYALPS Tirol ---------- */
   "tirol": {
-    adresse: "",
-    wlan:    ""
+    adresse:      "",
+    wlan:         "",
+    wlanpasswort: ""
   },
 ```
 
@@ -26,16 +27,21 @@ Text zwischen die Anführungszeichen schreiben, speichern – fertig:
 
 ```
   "tirol": {
-    adresse: "Beispielstraße 12, 6414 Beispielort",
-    wlan:    "MYALPS-Tirol"
+    adresse:      "Beispielstraße 12, 6414 Beispielort",
+    wlan:         "MYALPS-Gast",
+    wlanpasswort: "Bergblick2026"
   },
 ```
 
 Regeln:
 * Nur den Text **zwischen** den `"` ändern. Kommas und Klammern stehen lassen.
 * Ein Feld leer lassen = die Zeile wird auf der Seite gar nicht angezeigt.
-* **Niemals** WLAN-Passwort, Türcode oder Schlüsselversteck eintragen.
-  Der QR-Code ist öffentlich. Diese Daten gehören nur in die E-Mail an den Gast.
+* **Niemals** Türcode, Schlüsselversteck oder Alarmcode eintragen.
+  Der QR-Code ist öffentlich – diese Daten gehören nur in die E-Mail an den Gast.
+* `wlanpasswort` ist **freiwillig**. WLAN funktioniert nur in Reichweite, das
+  Risiko beschränkt sich also auf Leute in der Nähe. Trotzdem: nur eintragen,
+  wenn das Gäste-WLAN vom eigenen Netz (Router, Drucker, Kameras, Büro-PCs)
+  getrennt ist. Leer lassen = die Zeile erscheint nicht auf der Seite.
 
 Parken und Check-in-Zeit stehen standardmäßig auf
 "Kostenfreier Stellplatz direkt am Haus" und "Check-in ab 15:00 Uhr".
@@ -64,6 +70,7 @@ Haus eingetragen – ein fertiges Beispiel dafür steht dort bei "pirchhof".
 | White Pearl       | white-pearl   | `/white-pearl/`  |
 | Chalet Pirchhof   | pirchhof      | `/pirchhof/`     |
 | Jordans Lodge     | jordans-lodge | `/jordans-lodge/`|
+| MYALPS Himmelreich| himmelreich   | `/himmelreich/`  |
 
 `index.html` im Hauptordner ist eine neutrale Startseite
 ("Bitte QR-Code am Haus scannen").
@@ -72,7 +79,8 @@ Haus eingetragen – ein fertiges Beispiel dafür steht dort bei "pirchhof".
 
 ## Leitplanken
 * **Keine sensiblen Daten auf den Seiten** – keine Türcodes, keine
-  Schlüsselverstecke, keine WLAN-Passwörter.
+  Schlüsselverstecke, keine Alarmcodes. WLAN-Passwort ist freiwillig
+  (siehe oben) und steht je Haus in `haeuser.js`.
 * **Keine Verbindung zu myalps.at** – kein Custom-Domain, kein DNS.
 * **Railway / Cleaning App nicht anfassen** – das ist ein anderes Projekt.
 * Telefonnummer: allgemeine MYALPS-Nummer +43 720 502525 (steht ganz unten

@@ -95,6 +95,13 @@ const HAEUSER = {
     adresse:      "",
     wlan:         "",
     wlanpasswort: ""
+  },
+
+  /* ---------- MYALPS Himmelreich ---------- */
+  "himmelreich": {
+    adresse:      "",
+    wlan:         "",
+    wlanpasswort: ""
   }
 
 };

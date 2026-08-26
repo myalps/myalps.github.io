@@ -7,3 +7,4 @@ MYALPS Chalet Cecilia   https://gregorscheiber-afk.github.io/myalps-checkin/ceci
 MYALPS White Pearl      https://gregorscheiber-afk.github.io/myalps-checkin/white-pearl/
 MYALPS Chalet Pirchhof  https://gregorscheiber-afk.github.io/myalps-checkin/pirchhof/
 MYALPS Jordans Lodge    https://gregorscheiber-afk.github.io/myalps-checkin/jordans-lodge/
+MYALPS Himmelreich      https://gregorscheiber-afk.github.io/myalps-checkin/himmelreich/
