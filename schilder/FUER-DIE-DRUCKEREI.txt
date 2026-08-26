@@ -2,7 +2,7 @@ MYALPS · ANREISE-SCHILDER
 =========================================================
 
 FORMAT
-  150 x 200 mm (Hochformat), randabfallend gestaltet.
+  200 x 150 mm (QUERFORMAT), randabfallend gestaltet.
   Der Hintergrund ist vollflaechig dunkel (#0F1213).
   Bitte je nach Verfahren 2-3 mm Beschnittzugabe anlegen -
   im Randbereich stehen keine Texte oder Codes.
@@ -13,14 +13,14 @@ DATEIEN
   ALLE-Schilder.pdf       -> alle 10 Schilder, eine Seite je Haus
 
   Alles ist Vektor, also in jeder Groesse scharf.
-  Schriften: Helvetica und Courier (PDF-Standardschriften).
+  Schriften: Helvetica (PDF-Standardschrift).
   Falls die Schrift ersetzt werden soll, bitte vorher Ruecksprache -
   die QR-Codes duerfen dabei nicht angetastet werden.
 
 FARBEN
   Hintergrund   #0F1213   (fast schwarz)
   Text          #FFFFFF
-  Akzent        #E6A13C   (Orange/Amber)
+  Akzent        #C99A00   (Gold, wie im Logo)
   QR-Flaechen   #FFFFFF mit QR in #0F1213
 
   Die Dateien liegen in RGB vor. Fuer Offsetdruck bitte nach
@@ -35,11 +35,11 @@ WICHTIG - QR-CODES
   * Bei glaenzendem Material bitte matt oder seidenmatt im
     Bereich der Codes - Spiegelungen verhindern das Scannen.
   * Die beiden Codes sind unterschiedlich und duerfen nicht
-    vertauscht werden: links WLAN, rechts Check-in.
+    vertauscht werden: links WIFI, rechts INFORMATION.
 
 INHALT DER CODES
-  linker Code   verbindet das Handy direkt mit dem Gaeste-WLAN
-  rechter Code  fuehrt auf die Check-in-Seite des Hauses
+  linker Code (WIFI)         verbindet das Handy mit dem Gaeste-WLAN
+  rechter Code (INFORMATION) fuehrt auf die Check-in-Seite des Hauses
 
   Bei MYALPS Himmelreich gibt es nur einen (groesseren) Code,
   weil dort noch kein WLAN hinterlegt ist.
