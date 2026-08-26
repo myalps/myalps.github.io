@@ -12,7 +12,12 @@ DATEIEN
   schild-<hausname>.svg   -> gleiche Grafik als SVG
   ALLE-Schilder.pdf       -> alle 10 Schilder, eine Seite je Haus
 
-  Alles ist Vektor, also in jeder Groesse scharf.
+  Alles ist Vektor, also in jeder Groesse scharf - mit einer
+  Ausnahme: das MYALPS-Logo ist ein eingebettetes Pixelbild
+  (1411 x 1226 px, entspricht bei der angelegten Groesse rund
+  1000 dpi). Falls das Logo als Vektor (EPS/AI/SVG) vorliegt,
+  darf es gerne 1:1 ersetzt werden - Position und Groesse
+  bitte unveraendert lassen.
   Schriften: Helvetica (PDF-Standardschrift).
   Falls die Schrift ersetzt werden soll, bitte vorher Ruecksprache -
   die QR-Codes duerfen dabei nicht angetastet werden.
