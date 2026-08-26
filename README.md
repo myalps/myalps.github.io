@@ -1,76 +1,86 @@
 # MYALPS Check-in-Seiten
 
-Statische Willkommens-/Check-in-Seiten für unsere Apartmenthäuser. Gäste
-scannen einen QR-Code am Haus und landen auf der Seite ihres Hauses. Die Seite
-verweist auf die persönliche E-Mail (dort stehen die echten Zugangsdaten) und
-zeigt ein paar unkritische Infos.
+Statische Willkommens-/Check-in-Seiten für die Apartmenthäuser.
+Gäste scannen den QR-Code am Haus und landen auf der Seite ihres Hauses.
+Dort steht: "Ihre Zugangsdaten stehen in Ihrer E-Mail" plus ein paar
+unkritische Infos (Adresse, Parken, Check-in-Zeit, WLAN-Name) und ein
+Anruf-Button mit der allgemeinen MYALPS-Nummer.
 
 ---
 
-## Aufgabe für Claude Code
+## WO TRAGE ICH DIE HAUSDATEN EIN?
 
-Alles ist bereits vorbereitet. Zu tun ist nur noch:
+**In der Datei `haeuser.js` – und nur dort.**
 
-1. **Dieses Verzeichnis als neues GitHub-Repo anlegen** (eigenes Repo, z.B.
-   `myalps-checkin` — NICHT in das Repo der Cleaning App legen) und pushen.
+Dort steht für jedes der 9 Häuser ein kleiner Block:
 
-2. **GitHub Pages aktivieren** (Deploy from branch, `main`, root).
-   → Ergebnis: `https://<konto>.github.io/myalps-checkin/`
-   Die Haus-Seiten sind dann erreichbar unter
-   `.../myalps-checkin/pirchhof/`, `.../oetztal/` usw.
-
-3. **Echte Hausdaten einsetzen.** In jeder `\<slug\>/index.html` sind noch
-   Platzhalter, erkennbar an spitzen Klammern `⟨…⟩` und am href `tel:+43XXXXXXXXXX`:
-   - `⟨Adresse eintragen⟩`
-   - `⟨WLAN-Name eintragen⟩` (nur der NAME, niemals das Passwort)
-   - Telefonnummer im `tel:`-Link (ohne Leerzeichen)
-   Außerdem in den Texten prüfen: Parken, Check-in-Zeit (stehen im
-   `content`-Objekt unten in jeder Datei, Standardwerte gesetzt).
-   → **Diese Werte bei Gregor abfragen, nichts erfinden.**
-
-4. **QR-Codes erzeugen.** Für jede der 9 fertigen Seiten-URLs einen QR-Code als
-   PNG (Web) und SVG (Druck). Die Codes zeigen DIREKT auf die jeweilige
-   github.io-URL — keine externen Weiterleitungsdienste.
-
-## Wichtige Leitplanken
-- **Keine sensiblen Daten auf den Seiten**: keine Türcodes, keine
-  Schlüsselverstecke, keine WLAN-Passwörter. Der QR-Code ist öffentlich.
-- **Keine Verbindung zu myalps.at** — kein Custom-Domain, kein DNS. Die
-  github.io-Adresse genügt.
-- **Railway / Cleaning App nicht anfassen.**
-- Änderungen am Seiteninhalt gehen später per Git-Push (oder direkt über den
-  Datei-Editor in GitHub) automatisch live. Die QR-Codes bleiben gültig,
-  solange die URLs gleich bleiben.
-
-## Struktur
 ```
-index.html            → neutrale Startseite ("Bitte QR am Haus scannen")
-oetztal/index.html
-tirol/index.html
-historical/index.html
-muehlhof/index.html
-pure/index.html
-cecilia/index.html
-white-pearl/index.html
-pirchhof/index.html
-jordans-lodge/index.html
+  /* ---------- MYALPS Tirol ---------- */
+  "tirol": {
+    adresse: "",
+    wlan:    ""
+  },
 ```
 
-## Häuser & Slugs
-| Haus              | Slug          |
-|-------------------|---------------|
-| MYALPS Ötztal     | oetztal       |
-| MYALPS Tirol      | tirol         |
-| MYALPS Historical | historical    |
-| Mühlhof           | muehlhof      |
-| Pure              | pure          |
-| Chalet Cecilia    | cecilia       |
-| White Pearl       | white-pearl   |
-| Chalet Pirchhof   | pirchhof      |
-| Jordans Lodge     | jordans-lodge |
+Text zwischen die Anführungszeichen schreiben, speichern – fertig:
 
-## Seitenaufbau (zur Info)
-Jede Haus-Seite ist dreisprachig (DE/EN/PL, Umschalter oben rechts, erkennt die
-Browsersprache), mobil-optimiert. Texte liegen im `content`-Objekt im `<script>`
-am Ende jeder Datei. Layout und Struktur sind fertig und müssen nicht geändert
-werden.
+```
+  "tirol": {
+    adresse: "Beispielstraße 12, 6414 Beispielort",
+    wlan:    "MYALPS-Tirol"
+  },
+```
+
+Regeln:
+* Nur den Text **zwischen** den `"` ändern. Kommas und Klammern stehen lassen.
+* Ein Feld leer lassen = die Zeile wird auf der Seite gar nicht angezeigt.
+* **Niemals** WLAN-Passwort, Türcode oder Schlüsselversteck eintragen.
+  Der QR-Code ist öffentlich. Diese Daten gehören nur in die E-Mail an den Gast.
+
+Parken und Check-in-Zeit stehen standardmäßig auf
+"Kostenfreier Stellplatz direkt am Haus" und "Check-in ab 15:00 Uhr".
+Nur wenn ein Haus davon abweicht, wird das in `haeuser.js` beim jeweiligen
+Haus eingetragen – ein fertiges Beispiel dafür steht dort bei "pirchhof".
+
+### Zwei Wege zum Bearbeiten
+1. **Am PC**: Datei `C:\Claude\myalps-checkin\haeuser.js` öffnen, ändern,
+   speichern. Danach müssen die Änderungen noch hochgeladen werden.
+2. **Im Browser auf GitHub** (empfohlen für spätere Korrekturen):
+   Repo öffnen → `haeuser.js` anklicken → Stift-Symbol → ändern →
+   "Commit changes". Nach ca. 1 Minute ist es live. QR-Codes bleiben gültig.
+
+---
+
+## Häuser & Adressen der Seiten
+
+| Haus              | Ordner / Slug | Seite endet auf  |
+|-------------------|---------------|------------------|
+| MYALPS Ötztal     | oetztal       | `/oetztal/`      |
+| MYALPS Tirol      | tirol         | `/tirol/`        |
+| MYALPS Historical | historical    | `/historical/`   |
+| MYALPS Mühlhof    | muehlhof      | `/muehlhof/`     |
+| MYALPS Pure       | pure          | `/pure/`         |
+| Chalet Cecilia    | cecilia       | `/cecilia/`      |
+| White Pearl       | white-pearl   | `/white-pearl/`  |
+| Chalet Pirchhof   | pirchhof      | `/pirchhof/`     |
+| Jordans Lodge     | jordans-lodge | `/jordans-lodge/`|
+
+`index.html` im Hauptordner ist eine neutrale Startseite
+("Bitte QR-Code am Haus scannen").
+
+---
+
+## Leitplanken
+* **Keine sensiblen Daten auf den Seiten** – keine Türcodes, keine
+  Schlüsselverstecke, keine WLAN-Passwörter.
+* **Keine Verbindung zu myalps.at** – kein Custom-Domain, kein DNS.
+* **Railway / Cleaning App nicht anfassen** – das ist ein anderes Projekt.
+* Telefonnummer: allgemeine MYALPS-Nummer +43 720 502525 (steht ganz unten
+  in `haeuser.js`, gilt für alle Seiten).
+
+## Technisches (nur zur Info)
+Jede Haus-Seite ist dreisprachig (DE/EN/PL, Umschalter oben rechts, erkennt
+die Browsersprache) und mobil-optimiert. Die Texte liegen im `content`-Objekt
+im `<script>` am Ende jeder Datei. Adresse, WLAN-Name und optionale
+Abweichungen kommen aus `haeuser.js`. `_vorlage-beispiel.html` ist die
+unveränderte Vorlage und wird nicht ausgeliefert.
