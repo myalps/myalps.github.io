@@ -4,7 +4,7 @@ Statische Willkommens-/Check-in-Seiten für die Apartmenthäuser.
 Gäste scannen den QR-Code am Haus und landen auf der Seite ihres Hauses.
 Dort steht: "Deine Zugangsdaten stehen in deiner E-Mail" plus ein paar
 Infos (Adresse, Parken, Check-in-Zeit, WLAN) und ein Anruf-Button mit der
-allgemeinen MYALPS-Nummer. Gäste werden geduzt (DE und PL).
+allgemeinen MYALPS-Nummer. Gäste werden geduzt.
 
 ---
 
@@ -12,7 +12,7 @@ allgemeinen MYALPS-Nummer. Gäste werden geduzt (DE und PL).
 
 **In der Datei `haeuser.js` – und nur dort.**
 
-Dort steht für jedes der 9 Häuser ein kleiner Block:
+Dort steht für jedes der 10 Häuser ein kleiner Block:
 
 ```
   /* ---------- MYALPS Tirol ---------- */
@@ -87,7 +87,7 @@ Haus eingetragen – ein fertiges Beispiel dafür steht dort bei "pirchhof".
   in `haeuser.js`, gilt für alle Seiten).
 
 ## Technisches (nur zur Info)
-Jede Haus-Seite ist dreisprachig (DE/EN/PL, Umschalter oben rechts, erkennt
+Jede Haus-Seite ist zweisprachig (DE/EN, Umschalter oben rechts, erkennt
 die Browsersprache) und mobil-optimiert. Die Texte liegen im `content`-Objekt
 im `<script>` am Ende jeder Datei. Adresse, WLAN-Name und optionale
 Abweichungen kommen aus `haeuser.js`. Alle 10 Seiten sind bis auf Hausname

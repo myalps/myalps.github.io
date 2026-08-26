@@ -13,7 +13,7 @@
 <!--  1. Adresse, WLAN-Name (und bei Bedarf Parken / Check-in)    -->
 <!--     stehen ZENTRAL in der Datei  haeuser.js  im Hauptordner. -->
 <!--     Nur dort eintragen - diese Datei nicht anfassen.         -->
-<!--  2. Die drei Sprachen (DE/EN/PL) stehen im <script> unten     -->
+<!--  2. Die zwei Sprachen (DE/EN) stehen im <script> unten       -->
 <!--     im Objekt "content". Text dort anpassen, fertig.          -->
 <!--                                                                -->
 <!--  SICHERHEIT – BITTE LESEN:                                    -->
@@ -204,7 +204,6 @@
     <div class="langbar" role="group" aria-label="Sprache / Language">
       <button data-lang="de" aria-pressed="true">DE</button>
       <button data-lang="en" aria-pressed="false">EN</button>
-      <button data-lang="pl" aria-pressed="false">PL</button>
     </div>
 
     <div class="hero-inner">
@@ -331,7 +330,7 @@ const content = {
     heroSub:"Alles für deinen Check-in wartet in deiner letzten E-Mail von uns.",
     mailTitle:"Deine Check-in-Daten stehen in deiner E-Mail",
     mailBody:"Vor deiner Anreise haben wir dir eine E-Mail mit deinem persönlichen Zugang und allen Schritten geschickt. Öffne bitte die letzte E-Mail von MYALPS – dort findest du alles, was du für den Check-in brauchst.",
-    mailHint:"Absender: <strong>MYALPS</strong> · Betreff: Deine Anreise / Check-in. Schau bitte auch im Spam-Ordner nach.",
+    mailHint:"Absender: <strong>MYALPS</strong> · Betreff: „Dein Abenteuer im ÖTZTAL“. Schau bitte auch im Spam-Ordner nach.",
     infoTitle:"Gut zu wissen",
     lblAddress:"Adresse",
     lblParking:"Parken",
@@ -350,7 +349,7 @@ const content = {
     heroSub:"Everything for your check-in is waiting in your latest email from us.",
     mailTitle:"Your check-in details are in your email",
     mailBody:"Before your arrival we sent you an email with your personal access and every step. Please open the latest email from MYALPS — it contains everything you need to check in.",
-    mailHint:"Sender: <strong>MYALPS</strong> · Subject: Your arrival / check-in. Please also check your spam folder.",
+    mailHint:"Sender: <strong>MYALPS</strong> · Subject: “Your adventure in ÖTZTAL”. Please also check your spam folder.",
     infoTitle:"Good to know",
     lblAddress:"Address",
     lblParking:"Parking",
@@ -362,25 +361,6 @@ const content = {
     lblHinweis:"Please note",
     callLabel:"Call MYALPS",
     footer:"We wish you a wonderful stay."
-  },
-  pl:{
-    eyebrow:"Witamy w MYALPS",
-    heroTitle:"Miło, że jesteś u nas.",
-    heroSub:"Wszystkie informacje potrzebne do zameldowania znajdziesz w ostatnim e-mailu od nas.",
-    mailTitle:"Dane do zameldowania znajdziesz w swoim e-mailu",
-    mailBody:"Przed przyjazdem wysłaliśmy Ci e-mail z indywidualnym dostępem i wszystkimi krokami. Otwórz ostatni e-mail od MYALPS — znajdziesz w nim wszystko, czego potrzebujesz do zameldowania.",
-    mailHint:"Nadawca: <strong>MYALPS</strong> · Temat: Twój przyjazd / zameldowanie. Sprawdź też folder spam.",
-    infoTitle:"Warto wiedzieć",
-    lblAddress:"Adres",
-    lblParking:"Parking",
-    valParking:"Bezpłatne miejsce parkingowe przy domu",
-    lblCheckin:"Zameldowanie od",
-    valCheckin:"16:00",
-    lblWifi:"Sieć Wi-Fi",
-    lblWifiPw:"Hasło Wi-Fi",
-    lblHinweis:"Wskazówka",
-    callLabel:"Zadzwoń do MYALPS",
-    footer:"Życzymy udanego pobytu."
   }
 };
 
