@@ -282,6 +282,17 @@
           <div class="info-val" id="hausWlan"></div>
         </div>
       </li>
+
+      <li>
+        <span class="info-ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="10.5" width="15" height="9" rx="2"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/><circle cx="12" cy="15" r="1.1" fill="currentColor"/></svg>
+        </span>
+        <div>
+          <div class="info-label" data-i18n="lblWifiPw"></div>
+          <!-- Wert steht in haeuser.js (optional - leer lassen = wird nicht angezeigt) -->
+          <div class="info-val" id="hausWlanPw"></div>
+        </div>
+      </li>
     </ul>
 
     <!-- Offizielle MYALPS-Nummer -->
@@ -317,6 +328,7 @@ const content = {
     lblCheckin:"Check-in ab",
     valCheckin:"15:00 Uhr",
     lblWifi:"WLAN-Netz",
+    lblWifiPw:"WLAN-Passwort",
     callLabel:"MYALPS anrufen",
     footer:"Wir wünschen Ihnen einen schönen Aufenthalt."
   },
@@ -334,6 +346,7 @@ const content = {
     lblCheckin:"Check-in from",
     valCheckin:"3:00 PM",
     lblWifi:"Wi-Fi network",
+    lblWifiPw:"Wi-Fi password",
     callLabel:"Call MYALPS",
     footer:"We wish you a wonderful stay."
   },
@@ -351,6 +364,7 @@ const content = {
     lblCheckin:"Zameldowanie od",
     valCheckin:"15:00",
     lblWifi:"Sieć Wi-Fi",
+    lblWifiPw:"Hasło Wi-Fi",
     callLabel:"Zadzwoń do MYALPS",
     footer:"Życzymy udanego pobytu."
   }
@@ -399,6 +413,7 @@ function applyHaus(lang){
 
   setRow("hausAdresse", haus.adresse);
   setRow("hausWlan",    haus.wlan);
+  setRow("hausWlanPw",  haus.wlanpasswort);
 
   if(haus.parken && haus.parken[lang]){
     const el = document.querySelector('[data-i18n="valParking"]');

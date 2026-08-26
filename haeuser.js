@@ -5,10 +5,19 @@
      - Nur den Text ZWISCHEN den Anfuehrungszeichen "..." aendern.
      - Anfuehrungszeichen, Kommas und Klammern bitte stehen lassen.
      - Speichern -> gilt sofort fuer die Seite dieses Hauses.
+     - Ein Feld leer lassen = die Zeile erscheint auf der Seite gar nicht.
 
-   BITTE NIEMALS HIER EINTRAGEN (der QR-Code ist oeffentlich!):
-     - WLAN-PASSWORT     - Tuercode     - Schluesselversteck
-     Diese Daten gehoeren ausschliesslich in die persoenliche E-Mail.
+   ZUM FELD "wlanpasswort":
+     Die Seite ist ueber das Internet oeffentlich erreichbar. Wer das
+     WLAN-Passwort hier eintraegt, macht es fuer jeden lesbar, der die
+     Adresse der Seite kennt - nicht nur fuer den Gast im Haus.
+     Empfehlung: nur eintragen, wenn es ein reines GAESTE-WLAN ist,
+     das vom eigenen Netz (Router, Drucker, Kameras, PCs) getrennt ist.
+     Sonst das Feld leer lassen - dann steht das Passwort nur in der
+     persoenlichen E-Mail an den Gast.
+
+   NIEMALS HIER EINTRAGEN:
+     - Tuercode        - Schluesselversteck        - Alarmcode
 
    OPTIONAL: "parken" und "checkin" nur eintragen, wenn es bei diesem
    Haus ANDERS ist als der Standard. Sonst einfach weglassen.
@@ -20,50 +29,58 @@ const HAEUSER = {
 
   /* ---------- MYALPS Oetztal ---------- */
   "oetztal": {
-    adresse: "",
-    wlan:    ""
+    adresse:      "",
+    wlan:         "",
+    wlanpasswort: ""
   },
 
   /* ---------- MYALPS Tirol ---------- */
   "tirol": {
-    adresse: "",
-    wlan:    ""
+    adresse:      "",
+    wlan:         "",
+    wlanpasswort: ""
   },
 
   /* ---------- MYALPS Historical ---------- */
   "historical": {
-    adresse: "",
-    wlan:    ""
+    adresse:      "",
+    wlan:         "",
+    wlanpasswort: ""
   },
 
   /* ---------- MYALPS Muehlhof ---------- */
   "muehlhof": {
-    adresse: "",
-    wlan:    ""
+    adresse:      "",
+    wlan:         "",
+    wlanpasswort: ""
   },
 
   /* ---------- MYALPS Pure ---------- */
   "pure": {
-    adresse: "",
-    wlan:    ""
+    adresse:      "",
+    wlan:         "",
+    wlanpasswort: ""
   },
 
   /* ---------- MYALPS Chalet Cecilia ---------- */
   "cecilia": {
-    adresse: "",
-    wlan:    ""
+    adresse:      "",
+    wlan:         "",
+    wlanpasswort: ""
   },
 
   /* ---------- MYALPS White Pearl ---------- */
   "white-pearl": {
-    adresse: "",
-    wlan:    ""
+    adresse:      "",
+    wlan:         "",
+    wlanpasswort: ""
   },
 
   /* ---------- MYALPS Chalet Pirchhof ---------- */
   "pirchhof": {
-    adresse: "",
-    wlan:    ""
+    adresse:      "",
+    wlan:         "",
+    wlanpasswort: ""
 
     // BEISPIEL fuer eine Abweichung vom Standard:
     // Die  //  am Zeilenanfang entfernen - fertig.
@@ -75,8 +92,9 @@ const HAEUSER = {
 
   /* ---------- MYALPS Jordans Lodge ---------- */
   "jordans-lodge": {
-    adresse: "",
-    wlan:    ""
+    adresse:      "",
+    wlan:         "",
+    wlanpasswort: ""
   }
 
 };
