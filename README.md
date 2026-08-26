@@ -90,5 +90,5 @@ Haus eingetragen – ein fertiges Beispiel dafür steht dort bei "pirchhof".
 Jede Haus-Seite ist dreisprachig (DE/EN/PL, Umschalter oben rechts, erkennt
 die Browsersprache) und mobil-optimiert. Die Texte liegen im `content`-Objekt
 im `<script>` am Ende jeder Datei. Adresse, WLAN-Name und optionale
-Abweichungen kommen aus `haeuser.js`. `_vorlage-beispiel.html` ist die
-unveränderte Vorlage und wird nicht ausgeliefert.
+Abweichungen kommen aus `haeuser.js`. Alle 10 Seiten sind bis auf Hausname
+und Slug identisch – eine neue Seite entsteht durch Kopieren eines Ordners.

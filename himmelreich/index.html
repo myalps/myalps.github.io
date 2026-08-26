@@ -293,6 +293,17 @@
           <div class="info-val" id="hausWlanPw"></div>
         </div>
       </li>
+
+      <li>
+        <span class="info-ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5"/><circle cx="12" cy="8" r=".8" fill="currentColor"/></svg>
+        </span>
+        <div>
+          <div class="info-label" data-i18n="lblHinweis"></div>
+          <!-- Wert steht in haeuser.js (optional - leer lassen = wird nicht angezeigt) -->
+          <div class="info-val" id="hausHinweis"></div>
+        </div>
+      </li>
     </ul>
 
     <!-- Offizielle MYALPS-Nummer -->
@@ -326,9 +337,10 @@ const content = {
     lblParking:"Parken",
     valParking:"Kostenfreier Stellplatz direkt am Haus",
     lblCheckin:"Check-in ab",
-    valCheckin:"15:00 Uhr",
+    valCheckin:"16:00 Uhr",
     lblWifi:"WLAN-Netz",
     lblWifiPw:"WLAN-Passwort",
+    lblHinweis:"Hinweis",
     callLabel:"MYALPS anrufen",
     footer:"Wir wünschen dir einen schönen Aufenthalt."
   },
@@ -344,9 +356,10 @@ const content = {
     lblParking:"Parking",
     valParking:"Free parking space right at the house",
     lblCheckin:"Check-in from",
-    valCheckin:"3:00 PM",
+    valCheckin:"4:00 PM",
     lblWifi:"Wi-Fi network",
     lblWifiPw:"Wi-Fi password",
+    lblHinweis:"Please note",
     callLabel:"Call MYALPS",
     footer:"We wish you a wonderful stay."
   },
@@ -362,9 +375,10 @@ const content = {
     lblParking:"Parking",
     valParking:"Bezpłatne miejsce parkingowe przy domu",
     lblCheckin:"Zameldowanie od",
-    valCheckin:"15:00",
+    valCheckin:"16:00",
     lblWifi:"Sieć Wi-Fi",
     lblWifiPw:"Hasło Wi-Fi",
+    lblHinweis:"Wskazówka",
     callLabel:"Zadzwoń do MYALPS",
     footer:"Życzymy udanego pobytu."
   }
@@ -414,6 +428,7 @@ function applyHaus(lang){
   setRow("hausAdresse", haus.adresse);
   setRow("hausWlan",    haus.wlan);
   setRow("hausWlanPw",  haus.wlanpasswort);
+  setRow("hausHinweis", haus.hinweis && haus.hinweis[lang]);
 
   if(haus.parken && haus.parken[lang]){
     const el = document.querySelector('[data-i18n="valParking"]');
