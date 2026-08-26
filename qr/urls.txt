@@ -1,0 +1,9 @@
+MYALPS Ötztal           https://gregorscheiber-afk.github.io/myalps-checkin/oetztal/
+MYALPS Tirol            https://gregorscheiber-afk.github.io/myalps-checkin/tirol/
+MYALPS Historical       https://gregorscheiber-afk.github.io/myalps-checkin/historical/
+MYALPS Mühlhof          https://gregorscheiber-afk.github.io/myalps-checkin/muehlhof/
+MYALPS Pure             https://gregorscheiber-afk.github.io/myalps-checkin/pure/
+MYALPS Chalet Cecilia   https://gregorscheiber-afk.github.io/myalps-checkin/cecilia/
+MYALPS White Pearl      https://gregorscheiber-afk.github.io/myalps-checkin/white-pearl/
+MYALPS Chalet Pirchhof  https://gregorscheiber-afk.github.io/myalps-checkin/pirchhof/
+MYALPS Jordans Lodge    https://gregorscheiber-afk.github.io/myalps-checkin/jordans-lodge/
